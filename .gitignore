@@ -1,0 +1,12 @@
+# 忽略：Python 缓存 / 打包产物 / 本地日志
+__pycache__/
+*.py[cod]
+*.spec
+dist/
+build_out/
+logs/
+
+# 本地配置（正常不会出现在仓库里，双保险）
+settings.json
+cache.json
+pos.json

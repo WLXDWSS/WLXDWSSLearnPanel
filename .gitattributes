@@ -1,0 +1,16 @@
+# .bat 必须是 CRLF 且原样进仓库（cmd 解析对行尾敏感），所以不做任何转换
+*.bat   -text
+*.txt   -text
+
+# 文本：统一 LF，避免无意义的换行 diff
+*.md    text eol=lf
+*.py    text eol=lf
+
+# 二进制
+*.dll   binary
+*.exe   binary
+*.zip   binary
+*.png   binary
+
+# 词典体积大、内容固定，按二进制处理（保持字节一致）
+dict/cedict.txt binary

@@ -1,0 +1,14 @@
+# 候选英文学习窗（兼容版）依赖
+# 安装：pip install -r requirements.txt
+# 需要 Windows 10/11 + Python 3.9 及以上（推荐 3.11）
+
+# 微软拼音候选窗读取（UIA）
+uiautomation>=2.0.20
+
+# 分层窗口渲染（面板绘制）
+Pillow>=9.0.0
+
+# 说明：
+# - tkinter 是 Python 官方 Windows 安装包自带的，无需额外安装
+# - 搜狗路径依赖随包附带的 build\hookdll64.dll / hookdll32.dll / inject32.exe
+# - 词典 dict\cedict.txt 也随包附带，不依赖网络
